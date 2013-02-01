@@ -1,0 +1,16 @@
+noipextractor is a utility to decode the username and password stored in 
+the configuration file of the noip2 program (often named noip2.conf).  
+If you forgot your username or password to noip.com but you have a 
+configured noip2 installation, you can use this utility to recover them.
+
+Compile using make, and then use the executable for example as
+
+    ./noipextractor /var/lib/noip2/noip2.conf
+
+I have no clue what the licensing is because I wrote it by looking at 
+the GPL noip2 source code, it includes 2-clause BSD licensed base64 
+code, and it includes a url decoding function from stackoverflow (for 
+which the content is CC-by-SA 3.0, but supposedly using a code snippet 
+counts as fair use).  Therefore I release my code under any of the 
+following that I am legally allowed to: the public domain, GPL version 2 
+or later, 2-clause BSD, CC-by-SA 3.0.
